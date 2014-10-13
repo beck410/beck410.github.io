@@ -1,0 +1,24 @@
+/* --- DEFAULT STYLES --- */
+
+/* COLOR */
+header {
+	background: #ccc;
+}
+/* LINKS */
+
+/* HEADINGS */
+
+/* GRID */
+
+.wrapper {
+	max-width: 1280px;
+	margin: 0 auto; 
+}
+
+/* --- CUSTOM STYLES --- */
+
+/* Header */
+header {
+	width: 100%;
+	height: 100px;	
+}
