@@ -1,29 +1,23 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Rebecca Cronin-Dixon|Home</title>
-		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
-		<link rel="stylesheet" type="text/css" href="styles/main.css">
-	</head>
-	<body>
-		<section class="wrapper">
-			<header class="cf"> 
-				<div class="profile-img left-col"><img src="img/profile_img.jpg" />
-				</div>
-				<nav class="site-nav right-col">
-					<ul>
-						<li><a href="#">Bio</a></li>
-						<li><a href="#">Resume</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Blog</a></li>
-					</ul>
-				</nav>
-			</header>
-			<section class="main-content">
-				<h1>Rebecca Cronin-Dixon</h1>
-				
-			</section> <!-- .main-content -->
-			<footer></footer>
-		</section> <!--.wrapper -->
-	</body>
-</html>
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
