@@ -8,7 +8,6 @@ twitter_username: beckcd
 github_username: beck410
 nss: http://nashvillesoftwareschool.com/
 # Build settings
-markdown: rdiscount
-highlighter: rouge
+markdown: kramdown
 permalink: pretty
 
