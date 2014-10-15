@@ -8,5 +8,7 @@ twitter_username: beckcd
 github_username: beck410
 
 # Build settings
-markdown: kramdown
+markdown: rdiscount
 highlighter: rouge
+permalink: pretty
+
