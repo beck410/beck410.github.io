@@ -1,3 +1,5 @@
 _site
 .sass-cache
 img/Thumbs.db
+*.swp
+*.swo
