@@ -6,7 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://beck410.github.io" # the base hostname & protocol for your site
 twitter_username: beckcd
 github_username: beck410
-
+nss: http://nashvillesoftwareschool.com/
 # Build settings
 markdown: rdiscount
 highlighter: rouge

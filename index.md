@@ -1,0 +1,17 @@
+---
+layout: page
+title: About
+permalink: /
+---
+
+<section class="main-content">
+	<h1>Rebecca Cronin-Dixon</h1>
+	<img src ="images/profile_img.jpg" />
+	<h2>Work</h2>
+		<p>I am  an entrepreneurial and self-motivated web enthusiast with international experience in interactive web development and design, WordPress, digital marketing and relationship management.</p>
+<p>While currently a student at the <a href={{site.nss}}>Nashville Software School</a>, i&apos;m also available for web development & design projects.</p>
+  <h2>Play</h2>
+		<p>In my spare time away from the computer, you can find me with either a book,guitar or spatula in my hand. More than often my small jackabee Penny will be by my side.</p>
+</section> <!-- .main-content -->
+<footer></footer>
+</section> <!--.wrapper -->
