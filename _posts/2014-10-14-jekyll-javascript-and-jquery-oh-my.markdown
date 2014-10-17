@@ -3,6 +3,7 @@ layout: post
 title:  Jekyll&#44; Javascript and JQuery&#33; Oh My&#33;
 date:   2014-10-14 14:00:45
 categories: Nashville Software School
+
 ---
 
 This isn't my first time blogging. Well&#46;&#46;&#46; it is actually the first time i have put something online. I have written WordPress articles (which i am sure i will include at some point as we get further down the rabbit hole that is coding). I just never thought they were finished enough for other people to read them. So with this blog i am just going to throw any old thing up that seems like i might want to reflect on it later. 
