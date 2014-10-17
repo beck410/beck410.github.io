@@ -1,11 +1,16 @@
-/**
+/*
  * Site header
 */
 
+body {
+	max-width: $body-max-width;
+	margin: $center;
+}
+
 .site-header {
     /* border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light; */
-    min-height: 56px;
+    /* border-bottom: 1px solid $grey-color-light; */
+    /*min-height: 56px; */
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -26,10 +31,16 @@
 .site-nav {
     float: right;
     line-height: 56px;
+		width: 100%;
 
     .menu-icon {
         display: none;
     }
+
+		li {
+			width: 100%;
+			text-align: center;
+		}
 
     .page-link {
         color: $text-color;
@@ -38,7 +49,7 @@
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
-        }
+			}
     }
 
     @include media-query($on-palm) {
@@ -86,53 +97,42 @@
     }
 }
 
+/**
+* Site Sidebar
+*/
+
+.sidebar{
+	width: $sidebar-col;
+	float:left;
+}
+
+/**
+* Site Content
+*/
+.main-content {
+	width: $main-col;
+	float: right;
+}
+
+.profile_img {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
 
 
 /**
  * Site footer
  */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+.sidebar-col-footer {
+	@extend .sidebar;
+	min-height: $footer-col-heights;	
 }
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+.content-col-footer {
+	@extend .main-content;
+	min-height: $footer-col-heights;
 }
 
 @include media-query($on-laptop) {
@@ -162,7 +162,8 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+	padding: 0;
+	@extend %clearfix; 
 }
 
 .page-heading {

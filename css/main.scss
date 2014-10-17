@@ -10,12 +10,20 @@ $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+$body-max-width: 1280px;
+$center:         0 auto;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$sidebar-col:			 20%;
+$main-col:				 80%;
+$footer-col-heights: 100px;
+
+$text-color:       #655643;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
+$sidebar-color:		 #EF6630;
+$main-content-color: #F8E085;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);

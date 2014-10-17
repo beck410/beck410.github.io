@@ -1,6 +1,10 @@
 /**
  * Reset some basic elements
  */
+* {
+	box-sizing: border-box;
+}
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -65,6 +69,10 @@ figcaption {
  */
 ul, ol {
     margin-left: $spacing-unit;
+
+		li{
+			list-style-type: none;
+		}
 }
 
 li {
@@ -148,30 +156,6 @@ pre {
     }
 }
 
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
-    max-width:         calc(800px - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(800px - (#{$spacing-unit}));
-        max-width:         calc(800px - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-
-
-
 /**
  * Clearfix
  */
@@ -202,3 +186,24 @@ pre {
         }
     }
 }
+
+/**
+*Sidebar
+*/
+.sidebar {
+	background-color: $sidebar-color;
+}
+
+/**
+*Main content 
+*/
+
+.page-content {
+	background-color: $sidebar-color;
+}
+
+.main-content {
+	background-color: $main-content-color;
+}
+
+
