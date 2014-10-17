@@ -6,17 +6,15 @@
   <body>
 
 	<section class="page-content">
-   	 {% include header.html %}
-
-		<section class="sidebar">
+			{% include header.html %}
+		<div class="sidebar">
 			{% include sidebar.html %}
-		</section>
-  
+		</div>
+  	<div class="main-content">
   		{{ content }}
-
+		</div>
     	{% include footer.html %}
-
- 		</section>
+ 	</section>
   </body>
 
 </html>
