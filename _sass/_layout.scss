@@ -7,6 +7,10 @@ body {
 	margin: $center;
 }
 
+.main-content-layout {
+	padding: $spacing-unit;
+}
+
 .site-header {
     /* border-top: 5px solid $grey-color-dark;
     /* border-bottom: 1px solid $grey-color-light; */
@@ -29,7 +33,6 @@ body {
 }
 
 .site-nav {
-    float: right;
     line-height: 56px;
 		width: 100%;
 
@@ -104,6 +107,14 @@ body {
 .sidebar{
 	width: $sidebar-col;
 	float:left;
+	@extend .main-content-layout;
+
+	img{
+		margin: auto;
+		position: relative;
+		height: 50%;
+		width: 100%;
+	}
 }
 
 /**
@@ -112,6 +123,13 @@ body {
 .main-content {
 	width: $main-col;
 	float: right;
+	position: relative;
+	min-height: 600px;
+
+		h1{
+			margin-bottom: 20px;
+		}
+
 }
 
 .profile_img {

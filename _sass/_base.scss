@@ -27,6 +27,10 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+p {
+	font-size: 1em;
+	line-height: 1.375em;
+}
 
 
 /**
@@ -38,8 +42,6 @@ ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
-
-
 
 /**
  * Images
@@ -67,13 +69,10 @@ figcaption {
 /**
  * Lists
  */
-ul, ol {
-    margin-left: $spacing-unit;
 
 		li{
 			list-style-type: none;
 		}
-}
 
 li {
     > ul,
@@ -88,10 +87,25 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: 600;
+		font-family: $header-font-family;
 }
 
+h1 {
+	font-size: 3em;	
+}
 
+h2 {
+	font-size: 2.25em;
+}
+
+h3 {
+	font-size: 1.75em;
+}
+
+h4, h5, h6 {
+	font-size: 1.125em;
+}
 
 /**
  * Links
@@ -192,6 +206,16 @@ pre {
 */
 .sidebar {
 	background-color: $sidebar-color;
+
+	a {
+		font-family: $header-font-family;
+		font-weight: 400;
+		@extend h3
+	}
+
+	li {
+		text-align: center;
+	}
 }
 
 /**
