@@ -5,3 +5,9 @@ img/Thumbs.db
 *.swo
 TODO.txt
 */Thumbs.db
+build/
+serve/
+watch/
+images/Thumbs.db
+.gitignore
+
