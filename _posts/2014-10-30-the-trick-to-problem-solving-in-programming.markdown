@@ -1,4 +1,7 @@
-#The Trick to Problem Solving in Programming
+---
+title: The Trick to Problem Solving in Programming
+layout: post
+---
 Recently, we have been given a few assignments with little direction as e and how to structure our code. Qhile this was daunting to start off with it is essential to become a good or even adequate programmer. Being spoonfed the answer each day does nobody any good. To wrap your head around a new programming language and coding in general you kind of need to just dive (or be pushed) into the deep end. Don't get me wrong a little help here and there is a great thing and often needed but there is a line between receiving a push in the right direction and having somebody else find the solution for you. Ok, lets dive into some points on how you can approach a problem that for the moment seems impossible.
 
 ##Problem Solving Tips
@@ -50,10 +53,10 @@ function calculateNextState(currentState){
   });
   //return new grid
   return nextState;
-}
- <pre></code>
+}</code></pre>
 
- As you can see from above i am quite verbose when commenting but it really helps to break down a problem and organize your thoughts. For readability sake i would probably go back and remove the more obvious comments in there.
+As you can see from above i am quite verbose when commenting but it really helps to break down a problem and organize your thoughts. For readability sake i would probably go back and remove the more obvious comments in there.
 
- ##Final Thoughts
- Learning how to problem solve comes with patience, time and a lot of self belief. Whether its learning to code, play guitar or anything you do in life learning how to problem solve for that specific skill comes with practice. Keep at it and remember to always break down a problem before jumping ship and labelling it as too hard. 
+##Final Thoughts
+
+Learning how to problem solve comes with patience, time and a lot of self belief. Whether its learning to code, play guitar or anything you do in life learning how to problem solve for that specific skill comes with practice. Keep at it and remember to always break down a problem before jumping ship and labelling it as too hard.
