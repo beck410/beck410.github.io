@@ -1,6 +1,8 @@
-<img class="profile_img" src ="{{site.baseurl }}/images/profile_img.jpg" />
-<nav class="site-nav">
-	<div class="trigger">
+<div class="profile-image">
+	<img src ="{{site.baseurl }}/images/profile_img.jpg" />
+</div>
+<div class="ham-icon"></div>
+<nav class="main-nav">
 	<ul>
 	 	{% for page in site.pages %}
     	{% if page.title %}
@@ -10,5 +12,4 @@
 			</li>
 		{% endfor %}
 	</ul>
-	</div>
 </nav>
