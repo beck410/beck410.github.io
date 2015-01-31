@@ -1,0 +1,18 @@
+.home{
+  
+  h1,h2{
+    color: $home-color;
+    background: $header-bg-color;
+    padding: 3px 10px 3px 3px;
+  }
+
+  h1,h2,ul,p{
+    float:left;
+    clear: both;
+  }
+
+  p,ul {
+    padding-left: 3em;
+  }
+  
+}
