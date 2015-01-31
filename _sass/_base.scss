@@ -203,31 +203,12 @@ pre {
 
 /**
 *Sidebar
-*/
-.sidebar {
-	background-color: $sidebar-color;
 
-	a {
-		font-family: $header-font-family;
-		font-weight: 400;
-		@extend h3
-	}
-
-	li {
-		text-align: center;
-	}
-}
 
 /**
 *Main content 
 */
 
-.page-content {
-	background-color: $sidebar-color;
-}
 
-.main-content {
-	background-color: $main-content-color;
-}
 
 
