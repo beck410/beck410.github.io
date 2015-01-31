@@ -13,6 +13,7 @@ body {
   @include outer-container(1020px);
   background-color: white;
   margin: 40px auto;
+  padding-bottom: 100px;
 
 
   .sidebar {
