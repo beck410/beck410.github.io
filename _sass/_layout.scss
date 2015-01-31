@@ -1,10 +1,12 @@
 /*
  * Site header
-*/
+ */
+
 
 body {
   $border-box-sizing: true !default;
   background-color: grey;
+  color: $text-color;
 }
 
 .page-content {
@@ -14,21 +16,106 @@ body {
 
 
   .sidebar {
-   @include span-columns(4); 
-   background-color: red;
-   height: 300px;
-   margin-top: 70px;
-   margin-left: -100px;
+    @include span-columns(4); 
+    background-color: red;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: -100px;
   }
-    
+
   .main-content {
     @include span-columns(8);
     @include omega;
-    background-color: yellow;
-    
+    background-color: white;
+
     h1{
-      padding-top: 50px;
+      margin-top: 60px;
     }
   }
 
 }
+
+h1 {
+  font-size: 3em;
+  line-height: 1.05em;
+}
+
+h2{
+  font-size: 2.25em;
+  line-height: 1.25em;
+}
+
+h3{
+  font-size: 1.75em;
+  line-height: 1.25em;
+}
+
+h4{
+  font-size: 1.125em;
+  line-height: 1.222222222em;
+}
+
+@media (max-width: 760px) {
+  h1{
+    font-size: 2.5em;
+    line-height: 1.125em;
+  }
+
+  h2{
+    font-size: 2em;
+  }
+
+  h3{
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+
+  h4{
+    font-size: 1.125em;
+    line-height: 1.222222222em;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    line-height: 1.25em;
+  }
+
+  h1{
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+
+  h2{
+    font-size: 1.625em;
+    line-height: 1.15384615em;
+  }
+
+  h3{
+    font-size: 1.375em;
+    line-height: 1.1363634em;
+  }
+
+  h4{
+    font-size: 1.125em;
+    line-height: 1.111111em;
+  }
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+   */
+   .cf {
+       *zoom: 1;
+ }
