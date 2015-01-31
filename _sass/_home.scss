@@ -1,7 +1,10 @@
 .home{
-  
-  h1,h2{
+
+  h1,h2 { 
     color: $home-color;
+  }
+  
+  h2{
     background: $header-bg-color;
     padding: 3px 2em 3px 0.3em;
   }
