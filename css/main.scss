@@ -53,9 +53,8 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "bourbon/bourbon",
+        "base/base",
         "neat/neat",
-        "base",
         "layout",
-        "syntax-highlighting",
         "resume",
-        "small_menu"
+        "home"
