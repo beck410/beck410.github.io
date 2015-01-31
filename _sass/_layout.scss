@@ -18,8 +18,8 @@ body {
 
   .sidebar {
     @include span-columns(4); 
-    background-color: red;
-    height: 300px;
+    background-color: white;
+    height: 100%;
     margin-top: 60px;
     margin-left: -100px;
   }

@@ -26,6 +26,8 @@ $blog-color: #35BAA3;
 $name-color: #CED900;
 $contact-color: #F04E00;
 $header-bg-color: #201612;
+$menu-text-color: white;
+$name-size: 1.5em;
 
 
 $on-palm:          600px;
@@ -55,4 +57,5 @@ $on-laptop:        800px;
         "neat/neat",
         "layout",
         "resume",
+        "sidebar",
         "home"
