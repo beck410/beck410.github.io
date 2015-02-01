@@ -19,8 +19,9 @@ This one was hard for me. I wouldn't say i have a competitive nature when it com
 
 ###Write Pseudo Code
 Pseudo code is awesome. It really helps you break down a problem and keep tabs on what you have already done. i write my pseudo code within my file and then put that part of code underneath it. Later on i might go back and delete the comments that are obvious from reading the code.
+ <pre><code>
 function calculateNextState(currentState){
-  <pre><code>//create empty array for new grid values
+ //create empty array for new grid values
   var nextState = [];
   //generate new rows
   currentState.forEach(function(currentRow, x){

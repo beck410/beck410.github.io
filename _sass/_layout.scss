@@ -121,3 +121,19 @@ h4{
    .cf {
        *zoom: 1;
  }
+
+ /* code blocks */
+pre {
+  background: whitesmoke;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding-left: 2%;
+  padding-right: 2%;
+
+  code {
+    font-family: "DejaVu Sans Mono";
+    line-height: 2em;
+    
+  }
+}
+
