@@ -16,6 +16,9 @@
     padding: 3px 2em 3px 0.3em;
   }
 
+  #github {
+   margin-left: 3%; 
+  }
 
   .project-img {
     @include span-columns(4);

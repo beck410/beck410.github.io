@@ -1,5 +1,5 @@
 ---
-title:  Twisted Time Traveller Game
+title:  Twisted Time Traveller
 github: https://github.com/beck410/GJ_Timetravel
 website: https://twistedtimetraveller.firebaseapp.com/
 img: ../images/ttt_md.png

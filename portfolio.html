@@ -8,7 +8,12 @@ title: Portfolio
   <ul class="project-list">
     {% for project in site.projects %}
     <li class="single-project">
-      <h2><a href="{{project.website}}">{{project.title}}</a></h2> 
+    <h2>
+      <a href="{{project.website}}">{{project.title}}</a>
+      {% if project.github %}
+      <a href="{{project.github}}"><img id="github" src="../images/github_white_sm.png"/></a>
+      {% endif %}
+    </h2> 
       <div class="project-img">
         <img src="{{project.img}}"/>
       </div>

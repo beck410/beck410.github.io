@@ -1,5 +1,5 @@
 ---
-title:  Russell Rescue Custom Plugin 
+title:  Russell Rescue WP Plugin 
 github: https://github.com/beck410/rr_dogs
 website: http://www.russellrescuetn.com
 img: ../images/rr_plugin_md.png
