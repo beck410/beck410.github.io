@@ -1,0 +1,17 @@
+.single-project {
+  @include outer-container(100%);
+}
+
+.project-img {
+  @include span-columns(4);
+
+  img {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+
+.project-info {
+  @include span-columns(8);
+  @include omega;
+}

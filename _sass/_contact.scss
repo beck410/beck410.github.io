@@ -1,0 +1,25 @@
+.contact {
+  h1,h2 {
+    color: $contact-color;
+  }
+  
+  h2{
+    background: $header-bg-color;
+    padding: 3px 2em 3px 0.3em;
+  }
+
+  h1,h2,ul,p, div{
+    float:left;
+    clear: both;
+  }
+
+  p,ul {
+    padding-left: 3em;
+  }
+
+  .social-media-links {
+    a {
+      padding-left: 50px;
+    }
+  }
+}
