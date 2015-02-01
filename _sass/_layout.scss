@@ -9,6 +9,11 @@ body {
   color: $text-color;
 }
 
+
+
+/**
+ * Page content
+ */
 .page-content {
   @include outer-container(1020px);
   background-color: white;
@@ -34,8 +39,6 @@ body {
       margin-top: 70px;
     }
   }
-
-}
 
 h1 {
   font-size: 3em;

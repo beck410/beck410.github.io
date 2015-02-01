@@ -2,8 +2,6 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
 $base-font-family: 'Droid Sans', sans-serif;
 $header-font-family: 'Raleway', sans-serif;
@@ -13,9 +11,7 @@ $base-line-height: 1.5;
 $body-max-width: 1280px;
 $center:         0 auto;
 $text-color: #201612;
-
 $spacing-unit:     30px;
-
 $sidebar-col:			 20%;
 $main-col:				 80%;
 $footer-col-heights: 100px;
@@ -29,11 +25,8 @@ $header-bg-color: #201612;
 $menu-text-color: white;
 $name-size: 1.5em;
 
-
 $on-palm:          600px;
 $on-laptop:        800px;
-
-
 
 // Using media queries with like this:
 // @include media-query($palm) {
@@ -42,15 +35,7 @@ $on-laptop:        800px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
 
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "bourbon/bourbon",
         "base/base",
