@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  The World Outside of Code
 categories: Nashville Software School
+title: The World Outside of Code&#58; It Does Exist
 
 ---
 
-#The World Outside of Code: It Does Exist
 
 When coding first starts overtaking your life it is easy to fall into the trap of thinking you have no skills and nothing to offer the world. While others seem to be conquering scopes and constructor functions you can sometimes feel you'll never reach the level of even an adequate programmer. As our teacher reminded us today we all had a life before code school and those skills are still valuable. 
 
