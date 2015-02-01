@@ -1,9 +1,6 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
-
 
 // Our variables
 $base-font-family: 'Droid Sans', sans-serif;
@@ -13,27 +10,23 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 $body-max-width: 1280px;
 $center:         0 auto;
-
+$text-color: #201612;
 $spacing-unit:     30px;
-
 $sidebar-col:			 20%;
 $main-col:				 80%;
 $footer-col-heights: 100px;
 
-$text-color:       #655643;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-$sidebar-color:		 #EF6630;
-$main-content-color: #F8E085;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$home-color: #587D95;
+$portfolio-color: #509EDC;
+$blog-color: #35BAA3;
+$name-color: #CED900;
+$contact-color: #F04E00;
+$header-bg-color: #201612;
+$menu-text-color: white;
+$name-size: 1.5em;
 
 $on-palm:          600px;
 $on-laptop:        800px;
-
-
 
 // Using media queries with like this:
 // @include media-query($palm) {
@@ -42,18 +35,15 @@ $on-laptop:        800px;
 //         padding-left: $spacing-unit / 2;
 //     }
 // }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
 
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
+        "bourbon/bourbon",
+        "base/base",
+        "neat/neat",
         "layout",
-        "syntax-highlighting",
-        "resume",
-        "small_menu"
+        "sidebar",
+        "contact",
+        "home",
+        "blog",
+        "portfolio",
+        "single_blog"

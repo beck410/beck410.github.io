@@ -1,0 +1,22 @@
+.post {
+
+  h1, h1 a, .post-meta, h2{ 
+    color: $blog-color;
+  }
+
+  h3, h3 a {
+    color: $contact-color;
+  }
+
+  h4, h4 a {
+    color: $portfolio-color;
+  }
+
+  h2, h2 a{
+    background: $header-bg-color;
+    padding: 3px 2em 3px 0.3em;
+  }
+
+
+
+}

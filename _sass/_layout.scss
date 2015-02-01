@@ -1,133 +1,12 @@
 /*
  * Site header
-*/
+ */
+
 
 body {
-	max-width: $body-max-width;
-	margin: $center;
-}
-
-.main-content-layout {
-	padding: $spacing-unit;
-}
-
-.site-header {
-    /* border-top: 5px solid $grey-color-dark;
-    /* border-bottom: 1px solid $grey-color-light; */
-    /*min-height: 56px; */
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
-
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
-}
-
-.main-nav {
-    line-height: 56px;
-		width: 100%;
-
-    .menu-icon {
-        display: none;
-    }
-
-		li {
-			width: 100%;
-			text-align: center;
-		}
-
-    a {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-			}
-    }
-}
-
-/**
-* Site Sidebar
-*/
-
-.sidebar{
-	width: $sidebar-col;
-	float:left;
-	@extend .main-content-layout;
-
-	img{
-		margin: auto;
-		position: relative;
-		height: 50%;
-		width: 100%;
-	}
-}
-
-/**
-* Site Content
-*/
-.main-content {
-	width: $main-col;
-	float: right;
-	position: relative;
-	min-height: 600px;
-
-		h1{
-			margin-bottom: 20px;
-		}
-
-}
-
-.profile-image img {
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-}
-
-
-
-/**
- * Site footer
- */
-.sidebar-col-footer {
-	@extend .sidebar;
-	min-height: $footer-col-heights;
-}
-
-.content-col-footer {
-	@extend .main-content;
-	min-height: $footer-col-heights;
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+  $border-box-sizing: true !default;
+  background-color: grey;
+  color: $text-color;
 }
 
 
@@ -136,76 +15,128 @@ body {
  * Page content
  */
 .page-content {
-	padding: 0;
-	@extend %clearfix;
-}
+  @include outer-container(1020px);
+  background-color: white;
+  margin: 40px auto;
+  padding-bottom: 100px;
 
-.page-heading {
-    font-size: 20px;
-}
 
-.post-list {
-    margin-left: 0;
-    list-style: none;
+  .sidebar {
+    @include span-columns(4); 
+    background-color: white;
+    height: 100%;
+    margin-top: 60px;
+    margin-left: -100px;
+  }
 
-    > li {
-        margin-bottom: $spacing-unit;
+  .main-content {
+    @include span-columns(8);
+    @include omega;
+    background-color: white;
+    padding-left: 3em;
+
+    h1{
+      margin-top: 70px;
     }
+  }
+
+h1 {
+  font-size: 3em;
+  line-height: 1.05em;
 }
 
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
+h2{
+  font-size: 2.25em;
+  line-height: 1.25em;
 }
 
-.post-link {
-    display: block;
-    font-size: 24px;
+h3{
+  font-size: 1.75em;
+  line-height: 1.25em;
 }
 
+h4{
+  font-size: 1.125em;
+  line-height: 1.222222222em;
+}
 
+@media (max-width: 760px) {
+  h1{
+    font-size: 2.5em;
+    line-height: 1.125em;
+  }
+
+  h2{
+    font-size: 2em;
+  }
+
+  h3{
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+
+  h4{
+    font-size: 1.125em;
+    line-height: 1.222222222em;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    line-height: 1.25em;
+  }
+
+  h1{
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+
+  h2{
+    font-size: 1.625em;
+    line-height: 1.15384615em;
+  }
+
+  h3{
+    font-size: 1.375em;
+    line-height: 1.1363634em;
+  }
+
+  h4{
+    font-size: 1.125em;
+    line-height: 1.111111em;
+  }
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+
+.cf:after {
+    clear: both;
+}
 
 /**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
+ * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+   */
+   .cf {
+       *zoom: 1;
+ }
+
+ /* code blocks */
+pre {
+  background: whitesmoke;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding-left: 2%;
+  padding-right: 2%;
+
+  code {
+    font-family: "DejaVu Sans Mono";
+    line-height: 2em;
+    
+  }
 }
 
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
-}

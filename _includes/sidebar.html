@@ -1,15 +1,16 @@
-<div class="profile-image">
-	<img src ="{{site.baseurl }}/images/profile_img.jpg" />
+<div class="profile cf">
+  <div class="profile-img">
+	  <img src ="{{site.baseurl }}/images/beck_close.jpg" />
+  </div>
+  <div class="profile-name">
+    <span>REBECCA CRONIN-DIXON</span>
+  </div>
 </div>
-<div class="ham-icon"></div>
 <nav class="main-nav">
 	<ul>
-	 	{% for page in site.pages %}
-    	{% if page.title %}
-			<li>
-			<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-       {% endif %}
-			</li>
-		{% endfor %}
+    <li><a href="{{site.baseurl}}/portfolio">PORTFOLIO</a></li>
+    <li><a href="{{site.baseurl}}/contact">CONTACT</a></li>
+    <li><a href="{{site.baseurl}}/blog">BECK'S BLOG</a></li>
+    <li><a href="{{site.baseurl}}/">HOME</a></li>
 	</ul>
 </nav>
