@@ -1,17 +1,33 @@
-.single-project {
-  @include outer-container(100%);
-}
-
-.project-img {
-  @include span-columns(4);
-
-  img {
-    max-width: 100%;
-    min-width: 100%;
+.portfolio-content {
+  .single-project {
+    @include outer-container(100%);
+    padding-bottom: 20px;
   }
-}
+  h1,h2 {
+    color: $portfolio-color;
 
-.project-info {
-  @include span-columns(8);
-  @include omega;
+    a{
+      color: $portfolio-color;
+    }
+  }
+
+  h2{
+    background: $header-bg-color;
+    padding: 3px 2em 3px 0.3em;
+  }
+
+
+  .project-img {
+    @include span-columns(4);
+
+    img {
+      max-width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  .project-info {
+    @include span-columns(8);
+    @include omega;
+  }
 }
