@@ -5,6 +5,7 @@ layout: post
 Recently, we have been given a few assignments with little direction as to how to structure our code. While this was daunting to start off with it is essential to become a good or even adequate programmer. Being spoonfed the answer each day does nobody any good. To wrap your head around a new programming language and coding in general you kind of need to just dive (or be pushed) into the deep end. Don't get me wrong a little help here and there is a great thing and often needed but there is a line between receiving a push in the right direction and having somebody else find the solution for you. Ok, lets dive into some points on how you can approach a problem that for the moment seems impossible.
 
 ##Problem Solving Tips
+
 ###Believe in yourself
 This one may seem obvious but many people (including myself) often cease up and have that first thought of "i don't know enough to solve this" or "There's no way ill be able to do that". It's more than acceptable to admit when you're beat but to give in to these thoughts as soon as a problem is presented to you is not even giving yourself a chance. Sit down first, push those thoughts aside and try to hash it out before admitting defeat.
 
