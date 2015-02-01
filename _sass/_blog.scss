@@ -1,0 +1,18 @@
+.blog {  
+  h1,h2,h3,span {
+    color: $blog-color;
+
+    a{
+      color: $blog-color;
+    }
+  }
+
+  h3{
+    background: $header-bg-color;
+    padding: 3px 2em 3px 0.3em;
+  }
+
+  span {
+    margin-bottom: 15px; 
+  }
+}
