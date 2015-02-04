@@ -25,8 +25,10 @@ $header-bg-color: #201612;
 $menu-text-color: white;
 $name-size: 1.5em;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$lgmd: "(max-width: 1100px)";
+$medium: "(max-width: 800px)";
+$small-tablet: "(max-width: 730px)";
+$large-mobile: "(max-width: 520px)";
 
 // Using media queries with like this:
 // @include media-query($palm) {
@@ -46,4 +48,5 @@ $on-laptop:        800px;
         "home",
         "blog",
         "portfolio",
-        "single_blog"
+        "single_blog",
+        "small_sidebar"
