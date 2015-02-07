@@ -75,14 +75,22 @@
         height: auto;
         overflow: hidden;
         padding: 0;
-        position:absolute;
-        width:  55%;
-        margin-left: 18%;
+        position:relative;
+        width:  100%;
         top:0;
-        
-        li {
-          display: none;
-        }
+        display:none;
+
+      li:nth-child(3) {
+        margin-top: 0;  
+      }
+
+      li:nth-child(even) {
+        margin-top: 0;
+      }
+      }
+      li{
+        margin:0;
+        padding:0;
       }
     }
   }
