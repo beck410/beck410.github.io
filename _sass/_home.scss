@@ -17,5 +17,17 @@
   p,ul {
     padding-left: 3em;
   }
+
+  ul li {
+    list-style-type: disc;
+  }
   
+}
+
+@media #{$medium} {
+  .home {
+    p,ul {
+      padding-left: 1em;
+    }
+  }
 }
