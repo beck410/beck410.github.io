@@ -8,29 +8,26 @@ body {
   background-color: grey;
   color: $text-color;
 }
-
-
-
 /**
  * Page content
  */
 .page-content {
-  @include outer-container(1020px);
+  @include outer-container(960px);
   background-color: white;
   margin: 40px auto;
   padding-bottom: 100px;
 
 
   .sidebar {
-    @include span-columns(4); 
+    @include span-columns(3); 
     background-color: white;
     height: 100%;
     margin-top: 60px;
-    margin-left: -100px;
+    margin-left: -60px;
   }
 
   .main-content {
-    @include span-columns(8);
+    @include span-columns(9);
     @include omega;
     background-color: white;
     padding-left: 3em;
@@ -140,4 +137,5 @@ pre {
     
   }
 }
+
 
