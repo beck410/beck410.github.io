@@ -6,16 +6,16 @@ categories: Nashville Software School
 
 ---
 
-While building an Angular app in class I was faced with the challenge of adding a way for users to upload images to reuse. At first i thought this shouldn't be too bad. I was using in [Firebase](https://www.firebase.com/) at the time for my database and was sure there was a way to use this for my image storage as well. Turns out images take up a lot of space and as a poor web developer I was not about to upgrade my firebase account. Luckily for me a number of my classmates had already tackled this problem and [Amazon S3](https://aws.amazon.com/s3/) seemed to hold the answers I was desperately seeking. So without further ado here is a step-by-step guide on Angular file uploading to Amazon s3.
+While building an Angular app in class I was faced with the challenge of adding a way for users to upload images to reuse. At first I thought this shouldn't be too bad. I was using [Firebase](https://www.firebase.com/) at the time for my database and was sure there was a way to use this for my image storage as well. Turns out images take up a lot of space and as a poor web developer I was not about to upgrade my firebase account. Luckily for me a number of my classmates had already tackled this problem and [Amazon S3](https://aws.amazon.com/s3/) seemed to hold the answers I was desperately seeking. So without further ado here is a step-by-step guide on Angular file uploading to Amazon s3.
 
 ##Sign Up For an Amazon S3 Account and Create a Bucket
-Navigate to [Amazon S3](https://aws.amazon.com/s3/) and click Create An AWS Account. From your console go to S3 (under Storage and Content Delivery). You should see an empty list under All Buckets. Create a new bucket. Make sure the name has no spaces as you'll need to hard code it into your Angular project.
+Navigate to [Amazon S3](https://aws.amazon.com/s3/) and click Create An AWS Account. From your AWS console go to S3 (under Storage and Content Delivery). You should see an empty list under All Buckets. Create a new bucket. Make sure the name has no spaces as you'll need to hard code it into your Angular project.
 
 ##Set Permissions
 Click the magnifying glass next to your bucket name. This should bring up configuration settings for your bucket to the right of the bucket list. Click Permissions to pull up permission settings. Then click add more permissions. In the grantee dropdown choose everyone and check upload/delete and view permissions. You should also have another grantee with your username and all boxes checked. Your permission settings may vary depending on your type of app and needs.
 
 ##Generate Encoded Policy And Signature
-For S3 to allow uploading of images into your bucket you will need to know our access key. In your bucket list you should see your name at the top of the screen. Click it to see a dropdown of options. Choose Security Credentials. Then Click Access Keys. If there are no access keys click Create New Access Key. Run irb in console and input the following:
+For S3 to allow uploading of images into your bucket you will need to know our access key. In your bucket list you should see your name at the top of the screen. Click it to see a dropdown of options. Choose Security Credentials. Then Click Access Keys. If there are no access keys click Create New Access Key. Run irb in your console and input the following:
 
 <pre><code>
 require 'base 64'
@@ -27,7 +27,7 @@ encoded_policy = Base64.strict_encode64(policy_json).gsub('\n','')
 signature = Base64.strict_encode64(OpenSSL::HMAC.digest(OpenSSL::Digest::Digest.new('sha1'),aws_secret_key,encoded_policy)).gsub('\n','')
 </code></pre>
 
-Make sure you change the XXXXX to your secret access key and insert your back name in encoded_policy. Save the encoded_policy string and signature that is given.
+Make sure you change the XXXXX to your secret access key and insert your bucket name in policy_json. Save the encoded_policy string and signature that is given.
 
 ##Change Bucket Permissions
 Next you'll need to add CORS configuration to your bucket permissions. Under permissions click edit CORS configuration near add more permissions. Add the following to the CORS configuration editor.
@@ -85,10 +85,10 @@ Once you have included it in your project add the following to your scripts afte
 &lt;script src="angular-file-upload.js"&gt;&lt;/script&gt;
 </code></pre>
 
-Make sure you add the folder it is at the start of the src.
+Make sure you add the folder it is in at the start of the src.
 
 ##Setting Up File Uploading In Angular
-I'm one of those people that creates a factory or service for everything so of course i put file uploading in its own factory. You can include it in your controller instead. Here is my code for setting up my upload factory. For a more indepth look please see the usage section on the [angular-file-upload docs](https://github.com/danialfarid/angular-file-upload#usage).
+I'm one of those people that creates a factory or service for everything so of course i put file uploading in its own factory. You can include it in your controller instead. Here is my code for setting up my upload factory. For a more in depth look please see the usage section on the [angular-file-upload docs](https://github.com/danialfarid/angular-file-upload#usage).
 
 <pre><code>
 .factory('uploadImage',function($upload){
@@ -162,4 +162,4 @@ Now all that's left to do is tie the controller to the view. This is where angul
 </code></pre>
 
 ##Final Thoughts
-This is a lot of information to take in and might require some more scouring the internet to get Amazon to play nice with your project. The [docs](https://github.com/danialfarid/angular-file-upload) for angular-file-upload are pretty good and should lead in the right direction. Just remember try try and try again.
+This is a lot of information to take in and might require some more scouring the Internet to get Amazon to play nice with your project. The [docs](https://github.com/danialfarid/angular-file-upload) for angular-file-upload are pretty good and should lead in the right direction. Just remember try try and try again.
