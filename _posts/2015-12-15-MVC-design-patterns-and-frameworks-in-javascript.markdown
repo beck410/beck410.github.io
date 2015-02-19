@@ -30,9 +30,11 @@ In a nutshell the model is your data. Whether it is simply an array, object or d
 Let's Look at an example. Let's imagine I have a shopping list object as my model
 
 <pre><code>
+```html
 	var shoppingList = {
 		items: [ {food: "bread",cost: 3.00},{food: "eggs",cost: 4.00},{food:"milk", cost: 2.00}];
 	}
+```
 </code></pre>
 
 One view may want to to list all items while another may want to add up the cost of all items. Now the view is in one place with no need to duplicate the list. Both views would simply call shoppingList.items through their controllers and manipulate them separately from the model. Less duplicate equals more maintainable code.
@@ -42,7 +44,7 @@ Views are the user interface of an application. It represents the model after it
 
 Let's loop back to our shopping list analogy. A view allowing users to add a new item to the shopping list may look like this.
 
-<pre><code>
+```html
 	<form>
 		<label>Add New Item</label>
 		<input type="text" id="newItem">
@@ -50,26 +52,29 @@ Let's loop back to our shopping list analogy. A view allowing users to add a new
 		<button id="addItem"></button>
 	</form>
 </code></pre> 
-
+```
 When addItem is clicked a function within the controller will pull the data from newItem and cost and add it to the shoppingList array. On the same page you could have the following code displaying the list (lets pretend the elements were added dynamically through the controller).
-
-<pre><code>
+<code><pre>
+```html
 	<ul id="viewShoppingList">
 		<li>bread: 3.00</li>
 		<li>eggs: 4.00</li>
 		<li>milk: 2.00</li>
 	</ul>
+```
 </code></pre>
 
 If we were to input apple into newItem and 1.00 into cost and click addItem a function within the controller would notify the model of a change and then the model would notify the controller to update the view. Lets assume the controller has a function that populates viewShoppingList with items. We would now see:
 
 <pre><code>
+```html
 	<ul id="viewShoppingList">
 		<li>bread: 3.00</li>
 		<li>eggs: 4.00</li>
 		<li>milk: 2.00</li>
 		<li>apple: 1.00</li>
 	</ul>
+```
 </code></pre>
 
 This is a very simple analogy and that requires a lot more work in the controller. Good MVC frameworks handle the hard yards by providing functions that automatically hook up the view to the controller.
