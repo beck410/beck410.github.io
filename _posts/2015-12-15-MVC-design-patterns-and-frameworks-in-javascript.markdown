@@ -30,7 +30,7 @@ In a nutshell the model is your data. Whether it is simply an array, object or d
 Let's Look at an example. Let's imagine I have a shopping list object as my model
 
 <pre><code>
-```html
+```
 	var shoppingList = {
 		items: [ {food: "bread",cost: 3.00},{food: "eggs",cost: 4.00},{food:"milk", cost: 2.00}];
 	}
@@ -44,18 +44,19 @@ Views are the user interface of an application. It represents the model after it
 
 Let's loop back to our shopping list analogy. A view allowing users to add a new item to the shopping list may look like this.
 
-```html
+<pre><code>
+```
 	<form>
 		<label>Add New Item</label>
 		<input type="text" id="newItem">
 		<iput type="number" id="cost">
 		<button id="addItem"></button>
 	</form>
-</code></pre> 
 ```
+</code></pre>
 When addItem is clicked a function within the controller will pull the data from newItem and cost and add it to the shoppingList array. On the same page you could have the following code displaying the list (lets pretend the elements were added dynamically through the controller).
 <code><pre>
-```html
+```
 	<ul id="viewShoppingList">
 		<li>bread: 3.00</li>
 		<li>eggs: 4.00</li>
