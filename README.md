@@ -1,32 +1,22 @@
 beck410.github.io
 =================
+##Synopsis
+Personal website made using github pages to showcase projects, contact information and blog posts.
+
+##Langauges and Tools
+
+- [Jekyll](http://jekyllrb.com/)
+- [SASS](http://sass-lang.com/)
+- [Neat](http://neat.bourbon.io/)
+- [Bourbon](http://neat.bourbon.io/) 
+- [jQuery](https://jquery.com/)
 
 ## Basic Site Map
-* About/Bio
+* About
 * Blog 
-* Resume
-* Project Portfolio 
-* Contact page
+* Portfolio 
+* Contact
 
-### About/Bio Contents:
-* my picture
-* short overview of what i'm doing now
-* Short history of what i've done
-
-### Blog
-* standard jekyll site v2 of site
-
-### Resume
-* contact info 
-* work history
-* education
-* community involvement 
-* Selected projects 
-
-### Project Portfolio
-* list of projects
-* when project clicked -> more details 
-* heavy js interactivity 
 
 
 
