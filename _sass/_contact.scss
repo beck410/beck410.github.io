@@ -22,10 +22,21 @@
       padding-left: 50px;
     }
   }
+
+  .resume-download {
+    padding-left: 3em;
+    padding-top: 10px;
+  }
 }
 
 @media #{$medium} {
-  .contact p {
-    padding-left: 1em;
+  .contact {
+    p {
+      padding-left: 1em;
+    }
+
+    .resume-download {
+      padding-left: 1em;
+    }
   }
 } 
