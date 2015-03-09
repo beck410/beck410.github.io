@@ -1,7 +1,7 @@
 # Site settings
-title: All About Beck
+title: Rebecca Cronin-Dixon
 email: bbeck410@gmail.com
-description: All you need to know about Beck Cronin-Dixon 
+description: Rebecca Cronin-Dixon Portfolio and Contact Site 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://beckcd.com" # the base hostname & protocol for your site
 twitter_username: beckcd
